@@ -23,11 +23,15 @@
             width: 100%; /* Ajusta el ancho del contenedor */
             max-width: 800px; /* Establece un ancho máximo */
             padding: 20px; /* Añade espacio entre el contenido y el borde del contenedor */
+            display: flex; /* Utiliza flexbox para ordenar los botones */
+            flex-wrap: wrap; /* Permite que los botones se envuelvan */
+            justify-content: center; /* Centra los botones horizontalmente */
         }
 
         h1 {
             color: #fff;
             margin-bottom: 30px;
+            width: 100%; /* Ajusta el ancho para que ocupe todo el contenedor */
         }
 
         p {
@@ -36,7 +40,6 @@
         }
 
         .delete-button {
-            display: inline-block;
             margin: 10px;
             padding: 15px 25px;
             background-color: #dc3545;
@@ -69,44 +72,37 @@
 <body>
     <div class="container">
         <h1>Enlaces de Eliminación de Cuentas</h1>
-        <div>
-            <button class="delete-button"><a href="https://www.facebook.com/help/delete_account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Facebook</a></button>
-            <button class="delete-button"><a href="https://www.instagram.com/accounts/remove/request/permanent/" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Instagram</a></button>
-            <button class="delete-button"><a href="https://www.tiktok.com/settings/manage-account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de TikTok</a></button>
-            <button class="delete-button"><a href="https://twitter.com/settings/deactivate" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Twitter</a></button>
-        </div>
-        <div>
-            <button class="delete-button"><a href="https://www.linkedin.com/help/linkedin/answer/63/closing-your-linkedin-account?lang=en" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de LinkedIn</a></button>
-            <button class="delete-button"><a href="https://accounts.snapchat.com/accounts/delete_account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Snapchat</a></button>
-            <button class="delete-button"><a href="https://www.reddit.com/prefs/deactivate/" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Reddit</a></button>
-            <button class="delete-button"><a href="https://www.pinterest.com/settings/account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Pinterest</a></button>
-        </div>
-        <div>
-            <button class="delete-button"><a href="https://www.tumblr.com/settings/delete_blog" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Tumblr</a></button>
-            <button class="delete-button"><a href="https://faq.whatsapp.com/general/account-and-profile/how-to-delete-your-account/?lang=en" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de WhatsApp</a></button>
-        </div>
-        <section>
-            <h2>¡Desconéctate en unos pocos clics!</h2>
-            <p>¿Estás listo para dar el primer paso hacia una vida digital más tranquila? Con nuestra herramienta gratuita de eliminación de cuentas de redes sociales, puedes cerrar tus perfiles en plataformas como Facebook, Instagram, Twitter y más en solo unos pocos clics. ¡Dile adiós al estrés de las redes sociales hoy mismo!</p>
-            <p>Sigue estos simples pasos para comenzar:</p>
-            <ol>
-                <li>Selecciona la red social de la que deseas eliminar tu cuenta.</li>
-                <li>Haz clic en el botón correspondiente para ser dirigido a la página de desactivación de cuentas de esa plataforma.</li>
-                <li>Sigue las instrucciones proporcionadas por la red social para completar el proceso de eliminación de tu cuenta.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>¡Desconéctate de forma rápida y sencilla!</h2>
-            <p>¿Quieres simplificar tu vida digital? Nuestra herramienta te permite eliminar tus cuentas de redes sociales con facilidad. ¡Toma el control de tu presencia en línea ahora!</p>
-        </section>
-        <section>
-            <h2>¡Elimina tus cuentas de redes sociales hoy mismo!</h2>
-            <p>¿Estás cansado de la presión constante de las redes sociales? Con nuestra ayuda, puedes deshacerte de tus perfiles en solo unos pocos pasos simples. ¡Es hora de tomar el control de tu presencia en línea!</p>
-        </section>
-        <section>
-            <h2>¡Dile adiós al estrés de las redes sociales!</h2>
-            <p>¿Te sientes abrumado por la cantidad de tiempo que pasas en las redes sociales? Con nuestra herramienta, puedes desconectar y recuperar tu paz mental. ¡Hazlo ahora mismo!</p>
-        </section>
+        <button class="delete-button"><a href="https://www.facebook.com/help/delete_account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Facebook</a></button>
+        <button class="delete-button"><a href="https://www.instagram.com/accounts/remove/request/permanent/" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Instagram</a></button>
+        <button class="delete-button"><a href="https://www.tiktok.com/settings/manage-account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de TikTok</a></button>
+        <button class="delete-button"><a href="https://twitter.com/settings/deactivate" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Twitter</a></button>
+        <button class="delete-button"><a href="https://www.linkedin.com/help/linkedin/answer/63/closing-your-linkedin-account?lang=en" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de LinkedIn</a></button>
+        <button class="delete-button"><a href="https://accounts.snapchat.com/accounts/delete_account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Snapchat</a></button>
+        <button class="delete-button"><a href="https://www.reddit.com/prefs/deactivate/" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Reddit</a></button>
+        <button class="delete-button"><a href="https://www.pinterest.com/settings/account" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Pinterest</a></button>
+        <button class="delete-button"><a href="https://www.tumblr.com/settings/delete_blog" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de Tumblr</a></button>
+        <button class="delete-button"><a href="https://faq.whatsapp.com/general/account-and-profile/how-to-delete-your-account/?lang=en" target="_blank" style="color: #fff; text-decoration: none;">Eliminar cuenta de WhatsApp</a></button>
     </div>
-</body>
-</html>
+
+    <section>
+        <h2>¡Desconéctate en unos pocos clics!</h2>
+        <p>¿Estás listo para dar el primer paso hacia una vida digital más tranquila? Con nuestra herramienta gratuita de eliminación de cuentas de redes sociales, puedes cerrar tus perfiles en plataformas como Facebook, Instagram, Twitter y más en solo unos pocos clics. ¡Dile adiós al estrés de las redes sociales hoy mismo!</p>
+        <p>Sigue estos simples pasos para comenzar:</p>
+        <ol>
+            <li>Selecciona la red social de la que deseas eliminar tu cuenta.</li>
+            <li>Haz clic en el botón correspondiente para ser dirigido a la página de desactivación de cuentas de esa plataforma.</li>
+            <li>Sigue las instrucciones proporcionadas por la red social para completar el proceso de eliminación de tu cuenta.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>¡Desconéctate de forma rápida y sencilla!</h2>
+        <p>¿Quieres simplificar tu vida digital? Nuestra herramienta te permite eliminar tus cuentas de redes sociales con facilidad. ¡Toma el control de tu presencia en línea ahora!</p>
+    </section>
+    <section>
+        <h2>¡Elimina tus cuentas de redes sociales hoy mismo!</h2>
+        <p>¿Estás cansado de la presión constante de las redes sociales? Con nuestra ayuda, puedes deshacerte de tus perfiles en solo unos pocos pasos simples. ¡Es hora de tomar el control de tu presencia en línea!</p>
+    </section>
+    <section>
+        <h2>¡Dile adiós al estrés de las redes sociales!</h2>
+        <p>¿Te sientes abrumado por la cantidad de tiempo que pasas en las redes sociales? Con nuestra herramienta, puedes desconectar y recuperar tu paz mental. ¡Hazlo ahora mismo!</p>
+    </
