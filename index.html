@@ -15,10 +15,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
         }
 
         .container {
             text-align: center;
+            width: 100%; /* Ajusta el ancho del contenedor */
+            max-width: 800px; /* Establece un ancho máximo */
+            padding: 20px; /* Añade espacio entre el contenido y el borde del contenedor */
         }
 
         h1 {
@@ -50,6 +54,15 @@
 
         .delete-button:focus {
             outline: none;
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media screen and (max-width: 600px) {
+            .delete-button {
+                margin: 5px; /* Reduce el margen entre los botones */
+                padding: 10px 20px; /* Reduce el padding de los botones */
+                font-size: 14px; /* Reduce el tamaño de la fuente */
+            }
         }
     </style>
 </head>
